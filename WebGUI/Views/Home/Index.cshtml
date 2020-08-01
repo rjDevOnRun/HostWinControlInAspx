@@ -1,0 +1,85 @@
+﻿@Page AspCompat="true" Language="C#"
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+@*<div>
+                <OBJECT id="MyWinControl1" height="200" width="200" classid="http:WinControls.dll#WinControls.WinTreeview" VIEWASTEXT>
+                    <PARAM NAME="Title" VALUE="My Title">
+                </OBJECT>
+        </div>
+
+        <div class="row">
+            <object id="MyWinControl1" height="200" width="200" classid="http:WinControls.dll#WinControls.WinTreeview"></object>
+    <OBJECT id="MyWinControl1" name="MyWinControl1" height="400" width="400" classid="WinControls.dll#WinControls.UserControl1" VIEWASTEXT>
+        <param Name="RadVisible" value="true" />
+        <param Name="RadFile" value="\\rjdell\SPPIDORCL\Plant\10\101\T-101-0001.pid" />
+        <param Name="RadDisplay" value="true" />
+    </OBJECT>
+    <embed name="MyWinControl1" />
+
+    </div>*@
+
+<div class="container">
+    @*<div class="form-control">
+            @using (Html.BeginForm())
+            {
+                //@Html.Partial("UserControlView", new WinControls.UserControl1 { Title = "My UserControl Test" });
+                @Html.Partial("UserControlView", new WinControls.UserControl1
+                {
+                    Title = "My RadControl",
+                    RadDisplay = true,
+                    RadFile = "",
+                    RadVisible = true
+                });
+            }
+        </div>*@
+</div>
+
+
+<div class="row">
+
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+
+    </div>
+
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    @*<div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>*@
+</div>
+
+<script language="javascript">
+    function InitRadView() {
+        MyWinControl1.RadVisible = true;
+        MyWinControl1.RadFile = "\\rjdell\SPPIDORCL\Plant\10\101\T-101-0001.pid";
+        MyWinControl1.RadVisible = true;
+    }
+</script>
