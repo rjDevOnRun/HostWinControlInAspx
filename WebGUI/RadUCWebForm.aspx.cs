@@ -15,6 +15,7 @@ namespace WebGUI.Views.Home
          * https://weblogs.asp.net/scottgu/url-routing-with-asp-net-4-web-forms-vs-2010-and-net-4-0-series
          * https://www.red-gate.com/simple-talk/dotnet/asp-net/mixing-web-forms-and-asp-net-mvc/
          * http://www.codedigest.com/posts/3/adding-aspnet-webforms-into-aspnet-mvc-project-and-vice-versa
+         * https://stackoverflow.com/questions/2062794/how-to-use-activex-with-asp-net
          */
 
         protected void Page_Load(object sender, EventArgs e)
