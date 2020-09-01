@@ -57,7 +57,8 @@ namespace RadViewUC
             newY = Convert.ToDouble(e.y);
 
             // Check Mouse-Middle button clicked then do View-Pan...
-            if (e.button == 4)
+            
+            if (((Control.ModifierKeys & Keys.Shift) == Keys.Shift) && e.button == 1)
             {
                 this.axRADViewCtl4121.CtlCursor = CursorTypeConstants.CursorPan;
                 if (currentX < newX)
