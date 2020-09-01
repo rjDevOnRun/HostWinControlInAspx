@@ -50,15 +50,13 @@ namespace RadViewUC
 
         private void RadOCX_MouseScroll(object sender, _DRadViewerEvents_MouseScrollEvent e)
         {
-            this.RadOCX.MoveToCenter(SPPIDRADViewCtl.CoordinateSpaceConstants.CoordinateSpacePixel, Convert.ToDouble(e.x), Convert.ToDouble(e.y));
-
             if (e.delta < 0)
             {
-                this.RadOCX.Zoom(SPPIDRADViewCtl.CoordinateSpaceConstants.CoordinateSpaceTwip, Convert.ToDouble(e.x), Convert.ToDouble(e.y), 0.9925);
+                this.RadOCX.Zoom(SPPIDRADViewCtl.CoordinateSpaceConstants.CoordinateSpacePixel, e.x, e.y, 0.95);
             }
             else
             {
-                this.RadOCX.Zoom(SPPIDRADViewCtl.CoordinateSpaceConstants.CoordinateSpaceTwip, Convert.ToDouble(e.x), Convert.ToDouble(e.y), 1.075);
+                this.RadOCX.Zoom(SPPIDRADViewCtl.CoordinateSpaceConstants.CoordinateSpacePixel, e.x, e.y, 1.1);
             }
         }
 
